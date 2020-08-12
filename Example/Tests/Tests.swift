@@ -1,5 +1,5 @@
 import XCTest
-import NSObject-Meta
+import NSObject_Meta
 
 class Tests: XCTestCase {
     

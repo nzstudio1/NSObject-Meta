@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'NSObject-Meta'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of NSObject-Meta.'
+  s.summary          = 'A convenient way to assign objects to another instance of NSObject.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,19 +18,20 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  Using objc_getAssociatedObject and objc_setAssociatedObject is sometimes troublesome. NSObject+Meta brings in the ease of assigning meta objects to another instance of NSObject. Meta objects are retained, if you want to assign weakly use weakMeta.
+  For retained objects it uses a NSMutableDictionary and for the weak objects it uses NSMapTable with weak value containers.
                        DESC
 
   s.homepage         = 'https://github.com/nzstudio1/NSObject-Meta'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'nzstudio1' => 'hamid@nzstudio.dev' }
+  s.author           = { 'Hamidreza Vakilian' => 'hamid@nzstudio.dev' }
   s.source           = { :git => 'https://github.com/nzstudio1/NSObject-Meta.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'NSObject-Meta/Classes/**/*'
+  s.source_files = 'NSObject-Meta/NSObject-Meta/Classes/**/*'
   
   # s.resource_bundles = {
   #   'NSObject-Meta' => ['NSObject-Meta/Assets/*.png']

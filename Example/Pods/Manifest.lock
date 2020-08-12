@@ -1,0 +1,16 @@
+PODS:
+  - NSObject-Meta (0.1.0)
+
+DEPENDENCIES:
+  - NSObject-Meta (from `../`)
+
+EXTERNAL SOURCES:
+  NSObject-Meta:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  NSObject-Meta: d99d99d060229834de0f1f156ec1307b4c12299f
+
+PODFILE CHECKSUM: 94469ecf8a69a3ba98f91d10b690b739bf14d4d4
+
+COCOAPODS: 1.9.1
