@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'NSObject-Meta_Example' do
+  pod 'NSObject-Meta', :path => '../'
+
+  target 'NSObject-Meta_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
