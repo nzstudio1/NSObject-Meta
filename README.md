@@ -81,7 +81,7 @@ pod 'NSObject-Meta'
 
   
 
-nzstudio1, hamid@nzstudio.dev
+Hamidreza Vakilian, hamid@nzstudio.dev
 
   
 
